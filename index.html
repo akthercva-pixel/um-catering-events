@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UM Catering & Events | Bespoke Celebrations</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="public-site">
+<header class="site-header">
+  <a class="brand" href="#"><span class="brand-mark">UM</span><span><strong>UM CATERING & EVENTS</strong><small>Crafting unforgettable moments</small></span></a>
+  <nav><a href="#services">Services</a><a href="#how-it-works">How it works</a><a href="#contact">Contact</a></nav>
+  <a class="header-cta" href="#booking">Plan your event ↗</a>
+</header>
+<section class="hero">
+  <div class="hero-shade"></div>
+  <div class="hero-content">
+    <p class="eyebrow">PALAKKAD · KERALA</p>
+    <h1>Moments made<br><em>extraordinary.</em></h1>
+    <p class="hero-copy">Bespoke weddings, refined catering and celebrations designed around your vision.</p>
+    <a class="gold-button" href="#booking">Create your event plan <span>↗</span></a>
+    <div class="hero-note"><span class="gold-dot"></span> Thoughtfully planned. Beautifully delivered.</div>
+  </div>
+  <div class="hero-side-label">WEDDINGS · EVENTS · CATERING</div>
+</section>
+<section class="intro section-wrap" id="how-it-works">
+  <div><p class="eyebrow">YOUR DAY, YOUR WAY</p><h2>Every detail.<br><em>Considered.</em></h2></div>
+  <p>Choose the services you need, share your event details and review your selections before submitting your enquiry. Our team will prepare a personalised estimate after reviewing your requirements.</p>
+</section>
+<section class="booking section-wrap" id="booking">
+  <div class="section-heading" id="services"><p class="eyebrow">LET'S BEGIN</p><h2>Plan your <em>celebration</em></h2><p>Complete the details below and select the services you would like our team to arrange.</p></div>
+  <form id="orderForm">
+    <section class="form-card">
+      <div class="card-heading"><span class="step-number">01</span><div><h3>Event details</h3><p>Tell us a little about your celebration.</p></div></div>
+      <div class="form-grid">
+        <label>Full name *<input name="name" required placeholder="Your name"></label>
+        <label>WhatsApp number *<input name="phone" required type="tel" placeholder="+91 …"></label>
+        <label>Event type *<select name="eventType" required><option value="">Choose event type</option><option>Wedding</option><option>Reception</option><option>Engagement</option><option>Birthday</option><option>Corporate event</option><option>Other</option></select></label>
+        <label>Wedding / event date *<input name="date" required type="date"></label>
+        <label class="wide">Event destination / venue *<input name="destination" required placeholder="Venue name, town or full address"></label>
+        <label>Number of guests *<input name="guests" required type="number" min="1" placeholder="e.g. 500"></label>
+        <label>Approximate budget (optional)<select name="budget"><option value="">Prefer to discuss</option><option>Under ₹1,00,000</option><option>₹1,00,000–₹3,00,000</option><option>₹3,00,000–₹5,00,000</option><option>₹5,00,000+</option></select></label>
+        <label class="wide">Additional requirements<textarea name="notes" rows="3" placeholder="Any special requests, timings or ideas…"></textarea></label>
+      </div>
+    </section>
+    <div id="categories"></div>
+    <section class="form-card">
+      <div class="card-heading"><span class="step-number">✓</span><div><h3>Review your selections</h3><p>Your selected services will appear here. Prices are not displayed on this client page.</p></div></div>
+      <div id="reviewList" class="review-list"><p class="muted">No services selected yet.</p></div>
+      <div class="review-footer"><span>Selected service groups</span><strong id="selectionCount">0</strong></div>
+      <p class="privacy-note">Your request is an enquiry, not a confirmed booking. Our team will contact you after checking availability and preparing your estimate.</p>
+    </section>
+    <section class="form-card">
+      <div class="card-heading"><span class="step-number">→</span><div><h3>Send your enquiry</h3><p>Choose how your order request should reach UM Catering & Events.</p></div></div>
+      <label>Order delivery method *
+        <select name="delivery" required>
+          <option value="both">Send to Admin Dashboard + WhatsApp</option>
+          <option value="dashboard">Admin Dashboard only</option>
+          <option value="whatsapp">WhatsApp only</option>
+        </select>
+      </label>
+      <p class="small-note">WhatsApp enquiries open a pre-filled message for you to send. A live, shared Admin Dashboard requires the website to be connected to a secure backend.</p>
+      <button class="gold-button submit-button" type="submit">Review & send enquiry <span>↗</span></button>
+      <div id="submitMessage" role="status" aria-live="polite"></div>
+    </section>
+  </form>
+</section>
+<section class="contact-band" id="contact"><div><p class="eyebrow">LET'S CREATE SOMETHING BEAUTIFUL</p><h2>UM Catering <em>& Events</em></h2><p>Cherpulassery, Palakkad, Kerala</p></div><a class="contact-number" href="https://wa.me/919744562904" target="_blank" rel="noopener">WhatsApp us<br><strong>+91 97445 62904 ↗</strong></a></section>
+<footer><span>© <span id="year"></span> UM Catering & Events</span><span>Made for memorable moments.</span></footer>
+<script src="app.js"></script>
+</body></html>
